@@ -135,19 +135,7 @@ const INITIAL_FILES = {
   "index.js": {
     name: "index.js",
     language: "javascript",
-    value: `const http = require('http');
-
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello from your Cloud Server!');
-});
-
-// IMPORTANT: Use process.env.PORT
-const PORT = process.env.PORT || 3000;
-
-server.listen(PORT, () => {
-  console.log(\`Server running on port \${PORT}\`);
-});`,
+    value: `console.log("Welcome to my Cloud IDE project")`,
   },
 };
 
